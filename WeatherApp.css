@@ -1,0 +1,180 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+}
+  
+  .pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url('./WeatherAppImages/city1.jpeg');
+    min-height:100%;
+  }
+  
+  .pimg2{
+    background-image:url('./WeatherAppImages/mountain1.jpeg');
+    min-height:400px;
+    border-bottom: 10px solid rgb(230, 230, 230);
+  }
+  
+  .pimg3{
+    background-image:url('./WeatherAppImages/forest1.jpeg');
+    min-height:900px;
+   
+    
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f49d;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color:#2b2b2bd7;
+    color:#ddd;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .section-dark p{
+    margin-top: 30px;
+  }
+  .centerText{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+
+  }
+  .pimg3{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'ptext ptext Weatherdescipt'
+    'ptext ptext Weatherdescipt';
+    transition-duration: 1.5s;
+  }
+  .ptext{
+    grid-area: ptext;
+    text-align:start;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    margin-top: 90px;
+  }
+
+  .Weatherdescipt{
+    grid-area: Weatherdescipt;
+    background-color:transparent;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+  
+  }
+  .Weatherdescipt p{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    color: rgb(226, 226, 226);
+   
+    box-shadow: 1px 3px 1px rgb(204, 204, 204);
+     
+  }
+
+  .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+
+  .trans{
+    background-color:transparent;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 40px;
+
+  }
+  .pimg2 p{
+    text-shadow: 2px 2px 1px black;
+    margin-top: 10px;
+  }
+ 
+  .pimg3 .ptext p,li{
+    text-shadow: 2px 2px 1px black;
+    margin-left: 20%;
+  }
+
+  .border.trans h3{
+        font-size: 25px;
+        background-color: red;
+        width: 50%;
+        padding:10px 0px;
+        padding-left: 10px;
+        margin-left: 20%;
+    }
+    form ul{
+
+        list-style: none;
+        padding-left: 0px;
+        
+    }
+    form ul li{
+        margin-bottom: 20px;
+    }
+    form ul button{
+        height: 30px;
+   
+    }
+    form ul input{
+        height: 30px;
+        width:160px;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+  
+    .directToTop {
+      width:100%;
+      text-align:center;
+      background-color: rgb(56, 56, 56);
+      display: block;
+      color:rgb(240, 240, 240);
+      font-size:27px;
+      letter-spacing:8px;
+      text-transform:uppercase;
+      text-decoration: none;
+      padding: 20px 0px;
+    }
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+  

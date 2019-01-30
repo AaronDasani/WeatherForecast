@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherEveryWhere</title>
+    <link rel="stylesheet" href="WeatherApp.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="WeatherApp.js"></script>
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+
+    <div class="pimg1" id="homeScreen">
+        <div class="centerText">
+            <span class="border">
+            Weather Forecast
+            </span>
+        </div>
+    </div>
+    
+    <section class="section section-light">
+        <div>
+            <h2>About me??</h2>
+            <p>
+                Hello, I am a Coding Dojo student who had a little of free time in his hand and decided to create this simple weather forecast website.
+            </p>
+        </div>
+    </section>
+
+    <div class="pimg2">
+        <div class="centerText">
+            <span class="border trans">
+            <p>Knowing the weather is awesome</p>
+            </span>
+        </div>
+    </div>
+
+    <!-- <section class="section section-light"></section> -->
+
+    <div class="pimg3">
+        <div class="ptext">
+            <span class="border trans">
+            <h3>city,country</h3>
+            <p id="temperature">Temperature:<span>00</span></p>
+            <p id="humidity">Humidity:<span>00</span>%</p>
+            <p id="pressure">Pressure:<span>00</span>hpa<p> 
+            <p id="wind">Wind Speed:<span>00</span>km/h<p> 
+            <p id="clouds">Clouds:<span>00</span>%<p>       
+            <form>
+                <ul>
+                    <li>
+                        <label for="country">Country:</label>
+                        <input type="text" id="country">
+                    </li>
+                    <li>
+                        <label for="city">City:</label>
+                        <input type="text" id="city">
+                    </li>
+                    <li>
+                        <button type="submit">Weather Me</button>
+                    </li>
+                </ul>
+
+            </form>
+    
+            </span>
+        </div>
+        <div class="border trans Weatherdescipt">
+            <p>details</p>
+
+        </div>
+
+    </div>
+
+    <section class="section section-dark">
+        <p>Q: What do you call two straight days of rain in Seattle? A: A weekend.</p>
+    </section>
+
+    <div class="pimg1">
+        <div class="centerText">
+            <span class="border">
+            maad weather
+            </span>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#homeScreen" class="directToTop">top</a>
+    </footer>
+
+    <script>
+    
+    window.sr=ScrollReveal();
+    sr.reveal('.centerText',{
+        duration:2000,
+        origin:'bottom',
+        distance:'50px'
+    });
+    window.sr=ScrollReveal();
+    sr.reveal('.section-light div',{
+        duration:2000,
+        origin:'bottom',
+        distance:'50px'
+    });
+    window.sr=ScrollReveal();
+    sr.reveal('.ptext',{
+        duration:2000,
+        origin:'left',
+        distance:'300px',
+        viewFactor:0.3
+    });
+    window.sr=ScrollReveal();
+    sr.reveal('.section-dark p',{
+        duration:2000,
+        origin:'bottom',
+        distance:'300px',
+        viewFactor:0.3
+    });
+    
+    </script>
+    
+
+
+
+    
+</body>
+</html>
